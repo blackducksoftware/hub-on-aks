@@ -1,0 +1,80 @@
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-cfssl
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 1Mi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-webapp
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 1Gi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-logstash
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 50Gi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-webserver
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 1Gi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-registration
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 100Mi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-solr
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 10Gi
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: pvclaim-bd-hub-zookeeper
+  spec:
+    accessModes:
+      - ReadWriteMany
+    storageClassName: azurefile
+    resources:
+      requests:
+        storage: 1Gi

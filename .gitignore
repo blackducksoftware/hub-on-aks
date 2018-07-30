@@ -1,0 +1,8 @@
+download/
+key/
+/.sfdx/
+/.vscode/
+/sshAccess.yml
+/.pg_admin_passwd
+/.pg_reporting_passwd
+/.pg_user_passwd
