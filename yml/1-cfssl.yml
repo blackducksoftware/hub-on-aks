@@ -23,7 +23,7 @@ items:
           persistentVolumeClaim:
             claimName: pvclaim-bd-hub-cfssl
         containers:
-        - image: blackducksoftware/hub-cfssl:4.7.1
+        - image: blackducksoftware/hub-cfssl:4.8.1
           livenessProbe:
             exec:
               command:

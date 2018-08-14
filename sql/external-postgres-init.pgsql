@@ -1,4 +1,4 @@
---Downloaded from https://github.com/blackducksoftware/hub/tree/release/4.7.1/kubernetes 
+--Downloaded from https://github.com/blackducksoftware/hub/tree/release/4.8.1/kubernetes 
 CREATE DATABASE bds_hub owner blackduck ;
 CREATE DATABASE bds_hub_report owner blackduck;
 CREATE DATABASE bdio owner blackduck;
